@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Buku Favorit</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="font-mono m-5 bg-blue-950">
+  <!-- Header -->
+  <header class="text-center">
+    <h1 class="text-5xl font-bold text-center mb-5 text-white">Aplikasi Buku favorit</h1>
+  </header>
+  <!-- Input Nama Pengguna -->
+  <div  class="mb-5" id="session-container">
+    <h2 class="text-white text-3xl font-semibold mb-3">Selamat Datang!</h2>
+    <input class="mr-2.5 p-2 box-border w-full mb-5" type="text" id="namaPengguna" placeholder="Masukkan Nama Anda"/>
+    <button class="py-2 px-3.5 bg-cyan-600 text-2xl text-white font-semibold mb-5 w-full hover:bg-black" id="btnSimpanNama">Simpan Nama</button>
+    <h3 class="text-center text-white text-3xl font-semibold" id="salamPengguna"></h3>
+  </div>
+  <!-- Form Tambah Buku -->
+  <form class="mb-5" id="form-tambah-buku">
+    <input class="mr-2.5 p-2 box-border w-full mb-2 " type="text" id="judul" placeholder="Judul Buku" required />
+    <input class="mr-2.5 p-2 box-border w-full mb-2 " type="text" id="penulis" placeholder="Penulis" required />
+    <input class="mr-2.5 p-2 box-border w-full mb-2 " type="text" id="tahun" placeholder="Tahun Terbit" required />
+    <button class="py-2 px-3.5 bg-cyan-600 text-white font-semibold w-full text-2xl mb-5 hover:bg-black" type="submit">Tambah Buku</button>
+  </form>
+  <!-- Daftar Menu -->
+  <h2 class="text-center text-white font-semibold text-3xl mb-2">Daftar Buku</h2>
+  <div class="border-solid rounded border-white" id="daftar-buku"></div>
+   <!-- Buku Favorit -->
+   <h2 class="text-center text-white font-semibold text-3xl mb-2">Buku Favorit</h2>
+   <div id="buku-favorit"></div>
+   <script src="Script.js"></script>
+</body>
+</html>
